@@ -1,0 +1,31 @@
+[run]
+branch = True
+source = hindex
+
+[report]
+omit =
+  *migrations*
+  *commands*
+  *admin.py
+  *apps.py
+  *urls.py
+  *test*
+  *asgi.py
+  manage.py
+  *config/*
+  *wsgi.py
+  *postgres.py
+  *fixtures*
+  *swagger*
+  *__init__*
+  *context_processor.py
+  *custom_formatter
+  *create_admin_user.py
+exclude_lines = 
+  coverage: omit
+  NOQA
+  noqa
+  def __str__
+show_missing = True
+skip_covered = True
+fail_under = 100

@@ -1,0 +1,25 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "[html]": {
+        "editor.formatOnSave": false
+    },
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
+    "python.languageServer": "Pylance",
+    "python.formatting.provider": "autopep8",
+    "python.linting.flake8Enabled": true,
+    "cSpell.words": [
+        "hindex",
+        "localflavor"
+    ],
+}

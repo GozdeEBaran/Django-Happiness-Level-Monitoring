@@ -1,0 +1,19 @@
+{
+    "name": "happinessMonitoring",
+    "dockerComposeFile": "./docker-compose.yml",
+    "otherPortsAttributes": {
+        "onAutoForward": "notify"
+    },
+    "postStartCommand": "./scripts/init-local.sh",
+    "service": "backend",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "ms-python.python",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "ms-vsliveshare.vsliveshare",
+        "streetsidesoftware.code-spell-checker",
+        "ms-python.vscode-pylance",
+        "bibhasdn.django-html"
+    ]
+}

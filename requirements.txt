@@ -1,0 +1,53 @@
+# Core
+Django==4.0.5
+django-configurations==2.2
+gunicorn==20.1.0
+pyhumps==3.0.2
+
+
+# Rest apis
+djangorestframework==3.13.1
+Markdown==3.3.7
+django-filter==21.1
+
+# Auth
+djangorestframework-simplejwt==5.2.0
+python-jose==3.3.0
+cryptography==3.4.7
+
+
+# Developer Tools
+ipdb==0.13.9
+ipython==7.25.0
+flake8==3.9.2
+flake8-print==4.0.0
+autopep8==1.5.7
+django-debug-toolbar==3.2.1
+django-extensions==3.1.3
+django-localflavor==3.1
+
+
+# Testing
+mock==4.0.3
+factory-boy==3.2.0
+coverage==5.5
+
+# Api Documentation
+drf-spectacular==0.22.1
+
+# Debugging
+ptvsd==4.3.2
+
+# Environment Variables
+python-dotenv==0.19.0
+
+# Database
+psycopg2-binary==2.9.1
+
+# lint
+flake8==3.9.2
+flake8-print==4.0.0
+autopep8==1.5.7
+
+# Logging
+JSON-log-formatter==0.4.0

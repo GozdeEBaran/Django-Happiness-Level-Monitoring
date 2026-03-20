@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:14.3
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=hindex
+    ports:
+      - 5533:5432
+
+  backend:
+    build: ../
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_ENGINE=django.db.backends.postgresql
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DATABASE_URL=postgres
+      - DB_NAME=hindex
+      - DJANGO_DEBUG=yes
+      - TIER=Local
+    command: sh -c "/workspace/scripts/init-local.sh && sleep infinity"
+    volumes:
+      - ../:/workspace:delegated
+    depends_on:
+      - postgres
+    ports:
+      - 8000:8000
+volumes:
+  ..:
